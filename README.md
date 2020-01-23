@@ -4,12 +4,6 @@ API](https://perma.cc/docs/developer#developer-public-archives) to
 look up the URLs originally archived. It exports a CSV file with the
 Perma links and URLs.
 
-After setting up a virtual environment (see below), running
-
-    python main.py yourfile.pdf
-    
-should produce `yourfile.csv`.
-
 Requirements
 ------------
 You will need `pdftotext`, which is in various packages; try `brew
@@ -20,4 +14,15 @@ installing `python3-venv`, then run
 
     python3 -m venv env
     source env/bin/activate
+    
+Once you've activated the virtual environment, install required
+packages and the program itself like this:
+    
     pip install -r requirements.txt
+    pip install --editable .
+
+At this point, running
+
+    pdf-perma-urls yourfile.pdf
+    
+should produce `yourfile.csv`.

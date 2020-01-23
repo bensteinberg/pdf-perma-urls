@@ -35,7 +35,3 @@ def read_pdf(filename):
             else:
                 print('WARNING! {} not found.'.format(link))
                 w.writerow([link, 'NOTFOUND'])
-
-
-if __name__ == '__main__':
-    read_pdf()
