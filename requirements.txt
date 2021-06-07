@@ -4,12 +4,28 @@
 #
 #    pip-compile
 #
-certifi==2019.11.28       # via requests
-chardet==3.0.4            # via requests
+certifi==2019.11.28
+    # via requests
+chardet==3.0.4
+    # via requests
 click==7.0
-idna==2.8                 # via requests
-pip-tools==4.4.0
-requests==2.22.0
-six==1.14.0               # via pip-tools
+    # via
+    #   -r requirements.in
+    #   pip-tools
+idna==2.8
+    # via requests
+pep517==0.10.0
+    # via pip-tools
+pip-tools==6.1.0
+    # via -r requirements.in
+requests==2.25.1
+    # via -r requirements.in
+toml==0.10.2
+    # via pep517
 tqdm==4.41.1
-urllib3==1.25.8           # via requests
+    # via -r requirements.in
+urllib3==1.26.5
+    # via requests
+
+# The following packages are considered to be unsafe in a requirements file:
+# pip
