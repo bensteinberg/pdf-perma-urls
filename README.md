@@ -9,20 +9,12 @@ Requirements
 You will need `pdftotext`, which is in various packages; try `brew
 install poppler` on a Mac, or install `poppler-utils` in Linux.
 
-There are various ways of setting up a Python virtualenv. Try
-installing `python3-venv`, then run
+[Install Poetry](https://python-poetry.org/docs/#installation), then run
 
-    python3 -m venv env
-    source env/bin/activate
+    poetry install
     
-Once you've activated the virtual environment, install required
-packages and the program itself like this:
-    
-    pip install -r requirements.txt
-    pip install --editable .
-
 At this point, running
 
-    pdf-perma-urls yourfile.pdf
+    poetry run pdf-perma-urls yourfile.pdf
     
 should produce `yourfile.csv`.
